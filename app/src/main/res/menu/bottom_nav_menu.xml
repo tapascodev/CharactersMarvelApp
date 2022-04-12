@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/characterFragment"
+        android:icon="@drawable/ic_baseline_person_24"
+        android:title="@string/characters" />
+
+    <item
+        android:id="@+id/comicFragment"
+        android:icon="@drawable/ic_baseline_tv_24"
+        android:title="@string/comics" />
+
+    <item
+        android:id="@+id/creatorFragment"
+        android:icon="@drawable/ic_baseline_person_pin_24"
+        android:title="@string/creators" />
+
+
+</menu>

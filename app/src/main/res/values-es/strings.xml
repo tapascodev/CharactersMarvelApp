@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="home">Inicio</string>
+    <string name="movies">Peliculas</string>
+    <string name="characters">Personajes</string>
+    <string name="comics">Historietas</string>
+    <string name="creators">Creadores</string>
+    <string name="retry">Retry</string>
+</resources>
