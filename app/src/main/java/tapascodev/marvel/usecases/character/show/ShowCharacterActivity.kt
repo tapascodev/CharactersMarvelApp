@@ -1,7 +1,10 @@
 package tapascodev.marvel.usecases.character.show
 
+import android.graphics.drawable.Drawable
 import android.os.Bundle
 import com.bumptech.glide.Glide
+import com.bumptech.glide.request.target.CustomTarget
+import com.bumptech.glide.request.transition.Transition
 import tapascodev.marvel.databinding.ActivityShowCharacterBinding
 import tapascodev.marvel.model.domain.Character
 import tapascodev.marvel.model.domain.Resource
@@ -11,6 +14,7 @@ import tapascodev.marvel.usecases.character.CharacterRepository
 import tapascodev.marvel.usecases.character.CharacterViewModel
 import tapascodev.marvel.util.extension.displayToast
 import tapascodev.marvel.util.extension.visible
+
 
 class ShowCharacterActivity : BaseActivity<ActivityShowCharacterBinding, CharacterViewModel, CharacterRepository>(
     ActivityShowCharacterBinding::inflate
@@ -24,8 +28,13 @@ class ShowCharacterActivity : BaseActivity<ActivityShowCharacterBinding, Charact
 
         viewModel.getCharacter(id)
 
+        setToolbar()
+
+        binding.toolbar.setNavigationOnClickListener {
+            this.finish()
+        }
+
         binding.progressBar.visible(false)
-        supportActionBar?.hide()
 
         viewModel.character.observe(this) {
             when(it)
@@ -46,10 +55,32 @@ class ShowCharacterActivity : BaseActivity<ActivityShowCharacterBinding, Charact
 
     private fun displayUI (character: Character)
     {
-        val imageUrl = "${character.thumbnail}/landscape_xlarge.${character.thumbnailExt}"
-        Glide.with(this).load(imageUrl).into(binding.IVCharacter)
+        val imageUrl = "${character.thumbnail}/portrait_incredible.${character.thumbnailExt}"
+
+        Glide.with(this)
+            .load(imageUrl)
+            .centerCrop()
+            .into(object : CustomTarget<Drawable?>() {
+                override fun onLoadCleared(placeholder: Drawable?) {
+                }
+                override fun onResourceReady(
+                    resource: Drawable,
+                    transition: Transition<in Drawable?>?
+                ) {
+                    binding.layoutShow.background = resource
+                }
+            })
 
         binding.nameCharacter.text = character.name
+        binding.descriptionCharacter.text = character.description
+    }
+
+    private fun setToolbar()
+    {
+        setSupportActionBar(binding.toolbar)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.setDisplayShowHomeEnabled(true)
+        supportActionBar?.title = null
     }
 
     override fun getViewModel() = CharacterViewModel::class.java

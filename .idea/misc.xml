@@ -6,9 +6,11 @@
         <entry key="..\:/Users/adminlocal/AndroidStudioProjects/Marvel/app/src/main/res/drawable/background_rounded_container.xml" value="0.75" />
         <entry key="..\:/Users/adminlocal/AndroidStudioProjects/Marvel/app/src/main/res/drawable/round_corner_top.xml" value="0.1" />
         <entry key="..\:/Users/adminlocal/AndroidStudioProjects/Marvel/app/src/main/res/drawable/splash.xml" value="0.332" />
+        <entry key="..\:/Users/adminlocal/AndroidStudioProjects/Marvel/app/src/main/res/drawable/trending_gradient_shape.xml" value="0.2945" />
+        <entry key="..\:/Users/adminlocal/AndroidStudioProjects/Marvel/app/src/main/res/layout-v23/activity_show_character.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/adminlocal/AndroidStudioProjects/Marvel/app/src/main/res/layout/activity_home.xml" value="0.22" />
         <entry key="..\:/Users/adminlocal/AndroidStudioProjects/Marvel/app/src/main/res/layout/activity_main.xml" value="0.18802083333333333" />
-        <entry key="..\:/Users/adminlocal/AndroidStudioProjects/Marvel/app/src/main/res/layout/activity_show_character.xml" value="0.3009833262077811" />
+        <entry key="..\:/Users/adminlocal/AndroidStudioProjects/Marvel/app/src/main/res/layout/activity_show_character.xml" value="0.44926611359285257" />
         <entry key="..\:/Users/adminlocal/AndroidStudioProjects/Marvel/app/src/main/res/layout/activity_splash.xml" value="0.18802083333333333" />
         <entry key="..\:/Users/adminlocal/AndroidStudioProjects/Marvel/app/src/main/res/layout/characters_load_state_footer_view_item.xml" value="0.1675929884566054" />
         <entry key="..\:/Users/adminlocal/AndroidStudioProjects/Marvel/app/src/main/res/layout/fragment_character.xml" value="0.2955715756951596" />
@@ -21,6 +23,9 @@
         <entry key="..\:/Users/adminlocal/AndroidStudioProjects/Marvel/app/src/main/res/layout/item_character.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/adminlocal/AndroidStudioProjects/Marvel/app/src/main/res/layout/progress_bar_fragment.xml" value="0.1675929884566054" />
         <entry key="..\:/Users/adminlocal/AndroidStudioProjects/Marvel/app/src/main/res/layout/repos_load_state_footer_view_item.xml" value="0.1675929884566054" />
+        <entry key="..\:/Users/adminlocal/AndroidStudioProjects/Marvel/app/src/main/res/layout/toolbar_transparent.xml" value="0.3009833262077811" />
+        <entry key="..\:/Users/adminlocal/AndroidStudioProjects/Marvel/app/src/main/res/layout/toolbar_trasnsparent.xml" value="0.3009833262077811" />
+        <entry key="..\:/Users/adminlocal/AndroidStudioProjects/Marvel/app/src/main/res/layout/trending_gradient_shape.xml" value="0.3009833262077811" />
         <entry key="..\:/Users/adminlocal/AndroidStudioProjects/Marvel/app/src/main/res/menu/bottom_nav_menu.xml" value="0.36666666666666664" />
       </map>
     </option>

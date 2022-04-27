@@ -12,4 +12,8 @@
     <string name="creators">Creators</string>
     <string name="no_results">No results 😓</string>
     <string name="retry">Retry</string>
+    <string name="name">Name</string>
+    <string name="image_character">image_character</string>
+    <string name="description">Description</string>
+    <string name="logo">Logo</string>
 </resources>

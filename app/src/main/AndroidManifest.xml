@@ -16,7 +16,8 @@
         tools:targetApi="m">
         <activity
             android:name=".usecases.character.show.ShowCharacterActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.Marvel.NoActionBarAndStatusBar"/>
         <activity
             android:name=".usecases.home.HomeActivity"
             android:exported="false"
@@ -31,7 +32,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>

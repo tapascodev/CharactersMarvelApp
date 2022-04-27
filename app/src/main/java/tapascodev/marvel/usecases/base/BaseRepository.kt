@@ -14,8 +14,6 @@ abstract class BaseRepository {
             try {
                 Resource.Success(apiCall.invoke())
             } catch (throwable : Throwable) {
-
-                Log.d("messi", throwable.toString())
                 when(throwable){
                     is HttpException -> {
                         Resource.Failure(true, throwable.code(), throwable.response()?.errorBody())
